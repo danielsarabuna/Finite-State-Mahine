@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1705.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finite State Maсhine", "Finite State Maсhine.csproj", "{2888F7E2-5284-4C01-9C50-4494CE209780}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2888F7E2-5284-4C01-9C50-4494CE209780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2888F7E2-5284-4C01-9C50-4494CE209780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2888F7E2-5284-4C01-9C50-4494CE209780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2888F7E2-5284-4C01-9C50-4494CE209780}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CCCE3E03-6547-4802-A1F3-D87E8A63B587}
+	EndGlobalSection
+EndGlobal
