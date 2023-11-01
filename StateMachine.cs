@@ -6,11 +6,11 @@ namespace FiniteStateMaсhine
 {
     public class StateMachine
     {
-        public event Action<string, byte> OnLog;
+        public event Action<string, ushort> OnLog;
         private readonly Butler _butler;
-        private Dictionary<uint, Prop> _props;
-        private Dictionary<byte, IState> _states;
-        private List<ITransition> _allTransitions;
+        private readonly Dictionary<uint, Prop> _props;
+        private readonly Dictionary<ushort, IState> _states;
+        private readonly List<ITransition> _allTransitions;
         private ITransition[] _transitions;
         private IState _currentState;
         private IUpdatable _updatable;
@@ -20,7 +20,7 @@ namespace FiniteStateMaсhine
             _butler = butler;
             _props = props;
             _currentState = startState;
-            _states = new Dictionary<byte, IState>();
+            _states = new Dictionary<ushort, IState>();
             _allTransitions = new List<ITransition>();
             _transitions = Array.Empty<ITransition>();
         }
@@ -67,7 +67,7 @@ namespace FiniteStateMaсhine
             _states.Add(state.ID, state);
         }
 
-        public void SetState(byte id)
+        public void SetState(ushort id)
         {
             var state = _states[id];
             SetState(state);
@@ -80,7 +80,7 @@ namespace FiniteStateMaсhine
                 AddState(state);
         }
 
-        public bool TryGetState(byte id, out IState state) => _states.TryGetValue(id, out state);
+        public bool TryGetState(ushort id, out IState state) => _states.TryGetValue(id, out state);
 
         public bool TryGetState<T>(string id, out T state) where T : IState
         {

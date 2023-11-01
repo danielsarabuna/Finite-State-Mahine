@@ -1,6 +1,6 @@
 namespace FiniteStateMaсhine
 {
-    public interface IState : IUnique<byte>
+    public interface IState : IUnique<ushort>
     {
     }
 }
